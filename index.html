@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Quiz JavaScript</title>
+      <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <!-- Main content -->
+  <body>
+      <section id="header">
+          <!-- link to a separate html showing high score collated from local storage -->
+          <a href="score.html">View high score</a>
+          <!-- a count down timer -->
+          <time class="time"></time>
+      </section>
+      <section id="main-content">
+          <!-- some elements are hidden and displayed and content changed dependent on commands in JS -->
+          <h1 id="question">Quiz/title</h1>
+          <p id="desc">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+          <div id="quiz1">
+            <button value="val1" class="choice" id="one">choice1</button>
+            <button value="val2" class="choice" id="two">choice2</button>
+            <button value="val3" class="choice" id="three">choice3</button>
+            <button value="val4" class="choice" id="four">choice4</button>
+          </div>
+          <div id="quiz2">
+            <button value="val1" class="choice" id="five">choice1</button>
+            <button value="val2" class="choice" id="six">choice2</button>
+            <button value="val3" class="choice" id="seven">choice3</button>
+            <button value="val4" class="choice" id="eight">choice4</button>
+          </div>
+          <div id="quiz3">
+            <button value="val1" class="choice" id="nine">choice1</button>
+            <button value="val2" class="choice" id="ten">choice2</button>
+            <button value="val3" class="choice" id="eleven">choice3</button>
+            <button value="val4" class="choice" id="twelve">choice4</button>
+          </div>
+          <p id="score">Your final score is <span id="secondLeft"></span></p>
+          <form id="input" method="POST">
+            <label for="initial">Enter initials: </label>
+            <input type="text" placeholder="Your initials...." name="initials" id="candidate" />
+          </form>
+          <button class="select" id="start">start</button>
+          <button class="select" id="submit">submit</button>
+          <output id="output">output</output>
+      </section>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
